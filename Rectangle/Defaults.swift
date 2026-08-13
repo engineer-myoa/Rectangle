@@ -110,6 +110,7 @@ class Defaults {
     static let screensOrderedByX = IntEnumDefault<ScreenOrdering>(key: "screensOrderedByX", defaultValue: .yThenMinX)
     static let combinedDisplayMode = OptionalBoolDefault(key: "combinedDisplayMode")
     static let greenButtonOverride = BoolDefault(key: "greenButtonOverride")
+    static let presets = JSONDefault<PresetStore>(key: "presets")
     static var array: [Default] = [
         launchOnLogin,
         disabledApps,
@@ -206,7 +207,8 @@ class Defaults {
         cyclingOverlapMaxCascade,
         stackBadge,
         moveFixedSizeToEdge,
-        greenButtonOverride
+        greenButtonOverride,
+        presets
     ]
 }
 
